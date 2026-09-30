@@ -2,9 +2,9 @@
 
 **Project:** Campus Parking Helper
 
-**Team members:**
+**Team members: Zachary Crawford, marvell woods**
 
-**Date:**
+**Date: 30 Semptember 2026**
 
 ## User and problem
 
