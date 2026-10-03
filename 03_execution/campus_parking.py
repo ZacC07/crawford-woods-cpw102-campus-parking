@@ -1,14 +1,19 @@
-PRICE_PER_HOUR_OF_PARKING_IN_CAMPUS_PARKING_LOT = 2.0
-def calculate_estimated_parking_cost(hours_estimated_to_park_in_the_campus_parking_lot,price_per_hour_of_parking_in_campus_parking_lot):
-    estimated_price_of_parking_in_campus_parking_lot = hours_estimated_to_park_in_the_campus_parking_lot * 2.00
-    return estimated_price_of_parking_in_campus_parking_lot
+PRICE_PER_HOUR = 2.0
+def calculate_estimated_parking_cost(hours_estimated):
+    estimated_price = hours_estimated * PRICE_PER_HOUR
+    return estimated_price
 
 def main():
-    # Create a variable for parked hours
-    # A variable is a named space in memory
-    hours_estimated_to_park_in_the_campus_parking_lot = float(input("How many hours will you be parked?: "))
-    estimated_price_of_parking_in_campus_parking_lot = calculate_estimated_parking_cost(hours_estimated_to_park_in_the_campus_parking_lot,PRICE_PER_HOUR_OF_PARKING_IN_CAMPUS_PARKING_LOT)
-    print(f"price: ${estimated_price_of_parking_in_campus_parking_lot}")
+    # a variable for parked hours
+    hours_estimated = input("How many hours will you be parked?: ")
+    while (not hours_estimated.isnumeric()):
+        print(f"[{hours_estimated}] is not a valid input")
+        hours_estimated = input("Enter a valid input\nHow many hours will you be parked?: ")
+    # convert hours estimated to float
+    hours_estimated = float(hours_estimated)
+    estimated_price = calculate_estimated_parking_cost(hours_estimated)
+    # print the price nicely
+    print(f"price: ${estimated_price}")
 
 # call me
 main()
