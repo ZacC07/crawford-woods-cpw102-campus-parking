@@ -3,45 +3,49 @@
 ## Test Case 1: Valid Input
 
 **Input / Action:**  
-Enter [a valid input]
+Enter "9"
 
 **Expected Result:**  
-The program calculates and displays the correct [output]
+The program calculates and displays the correct "price: $18.0"
 
 **Actual Result:**  
-_To be completed during testing._
+"price: $18.0"
 
-**Result:**  
-Pass / Fail
+**Result:**
+Pass
 
 ---
 
 ## Test Case 2: Boundary Input
 
 **Input / Action:**  
-Enter the minimum or maximum allowed [input]
+Enter the minimum or maximum allowed 0
 
 **Expected Result:**  
 The program handles the boundary value correctly.
-
+"price: $0.0"
 **Actual Result:**  
-_To be completed during testing._
+"price: $0.0"
 
 **Result:**  
-Pass / Fail
+Pass
 
 ---
 
 ## Test Case 3: Invalid Input
 
 **Input / Action:**  
-Enter an invalid value (such as text when a number is expected)
+Enter an invalid value "ABC"
 
 **Expected Result:**  
-The program handles the invalid input without crashing.
+[ABC] is not a valid input
+Enter a valid input
+How many hours will you be parked?:
 
 **Actual Result:**  
-_To be completed during testing._
+[ABC] is not a valid input
+Enter a valid input
+How many hours will you be parked?:
 
 **Result:**  
-Pass / Fail
+Pass
